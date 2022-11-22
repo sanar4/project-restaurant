@@ -1,0 +1,111 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common Styling  */
+html {
+  /* To set 1 rem from default 16px --> 10px */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebfbee;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Top Section: Logo */
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 14rem;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Top Section: Navigation */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #099268;
+}
+
+a:visited {
+  color: #087f5b;
+}
+
+a:hover {
+  color: #fcc419;
+  cursor: pointer;
+}
+
+/* Main Section: Promotion */
+section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+article {
+  flex: 1;
+}
+
+.section-promotion {
+  margin-bottom: 6rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+/* 3 Info Sections */
+h2 {
+  font-size: 3rem;
+}
+
+/* Footer Section */
+.bottom-logo-img {
+  width: 20rem;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #099268;
+}
+
+footer div {
+  flex: 1;
+}
