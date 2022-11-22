@@ -1,3 +1,33 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+--- 02 COLORS
+
+- Primary: #fcc419;
+*/
+
 /* Global Reset */
 * {
   margin: 0;
@@ -15,12 +45,16 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebfbee;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   margin-left: 5%;
   margin-right: 5%;
   color: #333;
-  font-size: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 120rem;
 }
 
 /* Top Section: Logo */
@@ -29,22 +63,25 @@ header > img {
   margin-left: auto;
   margin-right: auto;
 
-  width: 14rem;
+  width: 46rem;
   height: auto;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Top Section: Navigation */
 .navigation {
   display: flex;
   justify-content: center;
-  gap: 6rem;
+  gap: 7rem;
 
   text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  /* margin-bottom: 4rem; */
+  background-color: rgb(44, 207, 11);
+  /* border-radius: 9px; */
+  padding: 1.4rem;
 }
 
 nav ul {
@@ -56,15 +93,15 @@ a {
 }
 
 a:link {
-  color: #099268;
+  color: #fff;
 }
 
 a:visited {
-  color: #087f5b;
+  color: rgb(33, 66, 7);
 }
 
 a:hover {
-  color: #fcc419;
+  color: rgb(255, 251, 11);
   cursor: pointer;
 }
 
@@ -72,7 +109,7 @@ a:hover {
 section {
   display: flex;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4.4rem;
 }
 
 article {
@@ -81,29 +118,76 @@ article {
 
 .section-promotion {
   margin-bottom: 6rem;
+  padding: 9.6rem 0;
+  height: 80vh;
+
+  position: relative;
+  background-image: url(img/promotion.jpg);
+  background-size: cover;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(img/promotion.jpg);
+}
+
+.article-promotion {
+  width: 120rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-45%, -50%);
+}
+
+.promotion-text {
+  width: 50%;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2.2rem;
+  font-weight: 600;
+  background-color: rgb(1, 163, 28);
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 6);
 }
 
 /* 3 Info Sections */
 h2 {
-  font-size: 3rem;
+  font-size: 4.4rem;
+  margin-bottom: 1.2rem;
 }
 
 /* Footer Section */
 .bottom-logo-img {
-  width: 20rem;
+  width: 4rem;
   height: auto;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .section-footer {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #099268;
+  font-size: 1.5rem;
 }
 
 footer div {
