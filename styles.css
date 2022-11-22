@@ -45,8 +45,8 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebfbee;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   margin-left: 5%;
   margin-right: 5%;
   color: #333;
@@ -66,7 +66,7 @@ header > img {
   width: 46rem;
   height: auto;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 /* Top Section: Navigation */
@@ -108,7 +108,7 @@ a:hover {
 /* Main Section: Promotion */
 section {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 4.4rem;
 }
 
@@ -117,7 +117,7 @@ article {
 }
 
 .section-promotion {
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   padding: 9.6rem 0;
   height: 80vh;
 
@@ -150,6 +150,9 @@ h1 {
 p {
   font-size: 2rem;
   line-height: 1.6;
+}
+
+.promotion-sub-text {
   margin-bottom: 4.8rem;
 }
 
@@ -162,7 +165,7 @@ p {
   text-decoration: none;
   display: inline-block;
   padding: 1.2rem 2.4rem;
-  border-radius: 2px;
+  border-radius: 9px;
 }
 
 .btn:hover {
@@ -170,26 +173,49 @@ p {
 }
 
 /* 3 Info Sections */
+.section-info {
+  margin-bottom: 4rem;
+  /* border-top: 1px solid #4e4e4e70; */
+}
+
 h2 {
-  font-size: 4.4rem;
-  margin-bottom: 1.2rem;
+  font-size: 3rem;
+  margin: 2.4rem 0;
+  text-align: center;
+  color: rgb(33, 66, 7);
+}
+
+.info-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.article-info {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  /* padding: 1.2rem; */
+  border-radius: 1.1rem;
+}
+
+.info-sub-text {
+  padding: 2.4rem;
 }
 
 /* Footer Section */
 .bottom-logo-img {
   width: 4rem;
   height: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .section-footer {
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #099268;
-  font-size: 1.5rem;
-}
-
-footer div {
-  flex: 1;
+  justify-content: space-between;
+  font-size: 1rem;
+  border-top: 1px solid #4e4e4e70;
+  padding: 1.2rem;
+  font-style: italic;
 }
